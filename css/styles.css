@@ -63,7 +63,7 @@ ul {
   display: flex;
   align-items: center;
 }
-.logo {
+.header .logo {
   margin-left: 80px;
   margin-top: 38px;
   margin-bottom: 38px;
@@ -339,7 +339,6 @@ ul {
   text-align: left;
 }
 .right-side .link {
-  outline: 1px solid skyblue;
   padding-bottom: 0px;
   display: inline-block;
   color: var(--secondary-color);
@@ -389,9 +388,57 @@ ul {
 }
 .footer .nav-list {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+}
+.blog .nav-list::after {
+  outline: 1px solid red;
+  content: '';
+  width: 1000px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .home {
+  margin-right: 80px;
+}
+.footer .service {
+  margin-right: 54px;
+}
+.footer .logo {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.footer .logo-img {
+  fill: var(--accent-color);
 }
 .footer .social-list {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+.footer .social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.footer .social-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+.footer .copyright {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.copyright .text {
+  margin-right: 14px;
+  line-height: 1.42;
+  text-align: center;
 }
