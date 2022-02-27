@@ -393,13 +393,14 @@ ul {
   margin-right: auto;
   margin-bottom: 42px;
 }
-.blog .nav-list::after {
-  outline: 1px solid red;
+.nav-list::after {
   content: '';
   width: 1000px;
   height: 1px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #000000;
+  margin-top: 45px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 .footer .home {
   margin-right: 80px;
